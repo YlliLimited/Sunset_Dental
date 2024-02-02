@@ -1,0 +1,266 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+.baskervville-regular {
+  font-family: "Baskervville", serif;
+  font-weight:inherit;
+  font-style: normal;
+}
+
+.baskervville-regular-italic {
+  font-family: "Baskervville", serif;
+  font-weight: inherit;
+  font-style: italic;
+}
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+  scroll-behavior: smooth;
+
+  user-select: none;  
+  -moz-user-select: none;
+  -webkit-user-select: none;
+
+  background-color:white;
+}
+
+/* Colors */
+:root{
+  --primary-color:rgb(4, 13, 18);
+  --secondary-color:rgb(24, 61, 61);
+  --tertiary-color:rgb(92, 131, 116);
+  --quantertary-color:rgb(147, 177, 166);
+
+  --primary-contrast-color:	rgb(254, 249, 167);
+  --secondary-contrast-color:	rgb(250, 194, 19);
+  --tertiary-contrast-color:	rgb(247, 126, 33);
+  --quantertary-contrast-color:	rgb(214, 28, 78);
+}
+
+
+
+
+/* Elements */
+h1{
+  font-size: clamp(3.4rem, 10vw, 9rem);
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -2%;
+}
+h2{
+  font-size: clamp(2.9rem, 8vw, 7rem);
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1.5%;
+}
+h3{
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1%;
+}
+h4{
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -1%;
+}
+h5{
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.8%;
+}
+h6{
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.5%;
+}
+
+p{
+  font-size: clamp(0.6rem, 2vw, 1rem);
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.6px;
+  font-weight:light;
+}
+small{
+  font-size:clamp(0.3rem, 1.4vw, 0.4rem);
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.6px;
+  font-weight:light;
+}
+
+
+
+
+/* Navbar */
+.navbar{
+  width: 98vw;
+  height: 90px;
+  position: fixed;
+
+  top: 1vw;
+  left: 1vw;
+
+  background-color: var(--secondary-color);
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+
+  padding: 0px;
+
+  z-index: 5;
+}
+.navbarLogo{
+  width: 70px;
+  aspect-ratio: 1;
+
+  margin-left: 10px;
+}
+.navbarLinks{
+  list-style-type: none;
+  color: white;
+  margin-right: 10px;
+}
+.navbarLinks li{
+  display: inline;
+  margin: 0px 20px;
+}
+.navbarLinks a{
+  color: white;
+  text-decoration: none;
+
+  box-shadow: 0;
+
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+
+  transition: box-shadow 0.1s;
+}
+.navbarLinks a:hover{
+  text-shadow: 1.2px 1.2px 0px white;
+  color: transparent;
+}
+.navbarLinks li:last-child a{
+  color: var(--primary-color);
+  background-color: white;
+  text-decoration: none;
+  margin: 0px 15px;
+  padding: 15px 40px 10px 40px;
+  border-radius: 5px;
+
+  box-shadow: 3px 3px 0 var(--tertiary-color);
+
+  transition: box-shadow 0.2s;
+}
+.navbarLinks li:last-child a:hover{
+  box-shadow: 5px 5px 0 var(--tertiary-color);
+}
+.navbarLinks li:last-child a:active{
+  box-shadow: 3px 3px 0 var(--tertiary-color);
+  transition: box-shadow 0.05s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero */
+.hero{
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+}
+.heroParent{
+  margin-top: 100px;
+
+  width: inherit;
+  height:calc(100vh - 115.7px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.heroChild{
+  width: 50%;
+  height: inherit;
+  padding: 0;
+  margin: 0;
+}
+.heroPic{
+  box-shadow: 30px 40px 0 var(--quantertary-color), -30px -30px 0 var(--secondary-color);
+}
+.heroRight{
+  color: var(--primary-color);
+  text-align: right;
+}
+.heroRight h2, h4{
+  margin: 0 30px 0 0;
+}
+.heroRight a{
+  color: white;
+  background-color: var(--primary-color);
+  align-self: flex-end;
+  margin: 0 30px 0 0;
+
+  text-decoration: none;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 1.8rem;
+
+  padding: 15px 50px;
+  margin-top: 40px;
+
+  border-radius: 5px;
+
+  box-shadow: 5px 5px 0 var(--tertiary-color);
+
+  transition: box-shadow 0.2s;
+}
+.heroRight a:hover{
+  box-shadow: 8px 8px 0 var(--tertiary-color);
+}
+.heroRight a:active{
+  box-shadow: 5px 5px 0 var(--tertiary-color);
+  transition: background-color 0.1s;
+}
+.rightRectangle{
+  width: 25%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  z-index: -5;
+
+  background-color: var(--primary-contrast-color);
+}
