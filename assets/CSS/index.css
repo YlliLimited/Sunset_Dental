@@ -157,7 +157,7 @@ small{
   background-color: white;
   text-decoration: none;
   margin: 0px 15px;
-  padding: 15px 40px 10px 40px;
+  padding: 12px 40px 12px 40px;
   border-radius: 5px;
 
   box-shadow: 3px 3px 0 var(--tertiary-color);
@@ -236,7 +236,7 @@ small{
 
   font-size: 1.8rem;
 
-  padding: 15px 50px;
+  padding: 17px 50px;
   margin-top: 40px;
 
   border-radius: 5px;
