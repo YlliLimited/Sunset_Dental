@@ -13,6 +13,19 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+::-webkit-scrollbar {
+  width:8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--quantertary-contrast-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+
 body{
   scroll-behavior: smooth;
 
@@ -21,7 +34,14 @@ body{
   -webkit-user-select: none;
 
   background-color:var(--quantertary-contrast-color);
+
+  border: 0;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
 }
+
 
 /* Colors */
 :root{
@@ -521,6 +541,117 @@ small{
   box-shadow: 6px 6px 0 var(--tertiary-color);
 }
 .servicesButton:active{
+  box-shadow: 4px 4px 0 var(--tertiary-color);
+  transition: box-shadow 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact */
+#contact{
+  width: 100%;
+  height: fit-content;
+
+  margin: 0px;
+  padding: 0px;
+
+  margin-top: 150px;
+}
+.contactParent{
+  width: 100%;
+  height: fit-content;
+
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  background-color: var(--quantertary-color);
+}
+
+.contactChild{
+  width: 50%;
+
+  margin: 0px;
+}
+
+.contactChild iframe{
+  aspect-ratio: 1/0.9;
+  margin: 0px;
+}
+
+.contactRight{
+  color: var(--primary-color);
+
+  padding: 0px 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactRight ul{
+  list-style-type: none;
+  margin: 0px;
+}
+.contactRight ul li{
+  margin: -30px 0px;
+  color: var(--secondary-color);
+}
+.contactRight h3{
+  margin: 0px 0px 80px 45px;
+}
+.contactRight h5{
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.5px;
+}
+.contactIcon{
+  width: 50px;
+  vertical-align: text-top;
+  margin: 0px 10px;
+}
+.contactButton{
+  text-decoration: none;
+
+  color: var(--quantertary-contrast-color);
+  background-color: var(--primary-color);
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+
+  padding: 15px 40px;
+  border-radius: 5px;
+
+  box-shadow: 4px 4px 0 var(--tertiary-color);
+
+  margin-left: 15px;
+
+  transition: box-shadow 0.2s;
+}
+.contactButton:hover{
+  box-shadow: 6px 6px 0 var(--tertiary-color);
+}
+.contactButton:active{
   box-shadow: 4px 4px 0 var(--tertiary-color);
   transition: box-shadow 0.1s;
 }
