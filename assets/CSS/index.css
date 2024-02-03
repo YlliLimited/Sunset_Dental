@@ -235,7 +235,7 @@ small{
   margin: 0;
 }
 .heroPic{
-  width: 600px;
+  width: 650px;
 }
 .heroRight{
   color: var(--primary-color);
@@ -283,14 +283,6 @@ small{
   z-index: -5;
 
   background-color: var(--primary-color);
-}
-.heroCircles{
-  position: absolute;
-
-  bottom: -85px;
-  left: -85px;
-
-  z-index: -1;
 }
 
 
@@ -587,7 +579,12 @@ small{
   flex-direction: row;
   flex-wrap: nowrap;
 
-  background-color: var(--quantertary-color);
+  
+  background-image: url(/assets/images/dentalClinic.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .contactChild{
@@ -654,6 +651,12 @@ small{
 .contactButton:active{
   box-shadow: 4px 4px 0 var(--tertiary-color);
   transition: box-shadow 0.1s;
+}
+.contactRight>div{
+  background-color: var(--quantertary-color);
+  width: fit-content;
+  height: fit-content;
+  padding: 30px 30px 80px 30px;
 }
 
 
