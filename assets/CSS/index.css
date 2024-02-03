@@ -507,7 +507,7 @@ small{
   background-color: var(--primary-color);
   color: var(--quantertary-contrast-color);
 
-  padding: 10px 30px;
+  padding: 12px 35px;
   border-radius: 5px;
 
   box-shadow: 4px 4px 0 var(--tertiary-color);
