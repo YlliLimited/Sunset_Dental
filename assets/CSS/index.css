@@ -20,7 +20,7 @@ body{
   -moz-user-select: none;
   -webkit-user-select: none;
 
-  background-color:white;
+  background-color:var(--quantertary-contrast-color);
 }
 
 /* Colors */
@@ -30,10 +30,10 @@ body{
   --tertiary-color:rgb(92, 131, 116);
   --quantertary-color:rgb(147, 177, 166);
 
-  --primary-contrast-color:	rgb(254, 249, 167);
-  --secondary-contrast-color:	rgb(250, 194, 19);
-  --tertiary-contrast-color:	rgb(247, 126, 33);
-  --quantertary-contrast-color:	rgb(214, 28, 78);
+  --primary-contrast-color:	rgb(187, 171, 140);
+  --secondary-contrast-color:	rgb(222, 208, 182);
+  --tertiary-contrast-color:	rgb(250, 238, 209);
+  --quantertary-contrast-color:	rgb(253, 247, 228);
 }
 
 
@@ -154,7 +154,7 @@ small{
 }
 .navbarLinks li:last-child a{
   color: var(--primary-color);
-  background-color: white;
+  background-color: var(--quantertary-contrast-color);
   text-decoration: none;
   margin: 0px 15px;
   padding: 12px 40px 12px 40px;
@@ -215,7 +215,7 @@ small{
   margin: 0;
 }
 .heroPic{
-  box-shadow: 30px 40px 0 var(--quantertary-color), -30px -30px 0 var(--secondary-color);
+  width: 600px;
 }
 .heroRight{
   color: var(--primary-color);
@@ -252,15 +252,15 @@ small{
   box-shadow: 5px 5px 0 var(--tertiary-color);
   transition: background-color 0.1s;
 }
-.rightRectangle{
+.leftRectangle{
   width: 25%;
   height: 100%;
 
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
 
   z-index: -5;
 
-  background-color: var(--primary-contrast-color);
+  background-color: var(--primary-color);
 }
