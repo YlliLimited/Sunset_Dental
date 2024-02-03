@@ -91,7 +91,7 @@ p{
   font-weight:light;
 }
 small{
-  font-size:clamp(0.8rem, 2vw, 1rem);
+  font-size:clamp(0.8rem, 2.1vw, 1.1rem);
   line-height: 1.4;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.6px;
@@ -222,7 +222,7 @@ small{
   text-align: right;
 }
 .heroRight h2, h4{
-  margin: 0 30px 0 0;
+  margin: 0 45px 0 0;
 }
 .heroRight a{
   color: white;
@@ -267,8 +267,8 @@ small{
 .heroCircles{
   position: absolute;
 
-  bottom: -80px;
-  left: -80px;
+  bottom: -85px;
+  left: -85px;
 
   z-index: -1;
 }
@@ -285,7 +285,13 @@ small{
   width: 100%;
   height: fit-content;
 
-  margin-top: 100px;
+  margin-top: 150px;
+
+  position: relative;
+
+  padding: 120px 0px;
+
+  background-color: var(--primary-contrast-color);
 }
 .whyParent{
   width: 100%;
@@ -296,9 +302,12 @@ small{
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
+
+  position: absolute;
+  top: -100px;
 }
 .whyChild{
-  width: 1/30;
+  width: 1/3;
   height: fit-content;
 }
 
@@ -308,15 +317,16 @@ small{
   flex-direction: column;
   text-align: center;
 
-  max-width: 400px;
+  width: 400px;
   margin: 0px 10px;
 
 
   position: relative;
 
-  padding: 30px 20px;
+  padding: 40px 20px;
 
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-contrast-color);
+  background-color: var(--quantertary-contrast-color);
 
   clip-path: polygon(10% 0%, 90% 0%, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0% 90%, 0% 10%);
 }
@@ -330,4 +340,83 @@ small{
   top: 0;
   width: 100%;
   height: 100%;
+}
+.whyUsTitle{
+  text-align: center;
+  margin-top: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* About us */
+#about{
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(/assets/images/teamImage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  margin-top: 150px;
+  padding: 80px 0px;
+}
+.aboutCard{
+  width: 55%;
+
+  background-color: rgb(4, 13, 18, 0.9);
+  color: var(--quantertary-contrast-color);
+
+  padding:100px;
+
+  border: var(--quantertary-contrast-color) 3px solid;
+  clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+}
+.aboutCard h3{
+  margin: 0px;
+}
+.aboutCard h5{
+  margin: 50px 0 0 0;
+}
+.aboutCard ul li{
+  list-style-type: "\2713    ";
+}
+.aboutCard p{
+  margin-bottom: 30px;
+}
+.aboutButton{
+  color: var(--primary-color);
+  background-color: var(--quantertary-contrast-color);
+  box-shadow: 3px 3px 0 var(--tertiary-color);
+
+  text-decoration: none;
+  
+  padding: 10px 30px;
+
+  border-radius: 5px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+
+  transition: box-shadow 0.2s;
+}
+.aboutButton:hover{
+  box-shadow: 5px 5px 0 var(--tertiary-color);
+}
+.aboutButton:active{
+  box-shadow: 3px 3px 0 var(--tertiary-color);
+  transition: box-shadow 0.1s;
 }
