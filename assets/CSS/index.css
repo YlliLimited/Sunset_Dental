@@ -420,3 +420,48 @@ small{
   box-shadow: 3px 3px 0 var(--tertiary-color);
   transition: box-shadow 0.1s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Services */
+#services{
+  width: 100%;
+  height: fit-content;
+}
+.servicesParent{
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+.servicesChild{
+  width: 33%;
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
+}
+.servicesCard{  
+  padding: 30px;
+  width: 80%;
+
+  background-color: var(--primary-contrast-color);
+}
+.servicesCard img{
+  width: 100%;
+}
