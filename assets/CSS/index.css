@@ -436,9 +436,15 @@ small{
 #services{
   width: 100%;
   height: fit-content;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 150px;
 }
 .servicesParent{
-  width: 100%;
+  width: 95%;
   height: fit-content;
 
   display: flex;
@@ -447,7 +453,7 @@ small{
   flex-direction: row;
   flex-wrap: wrap;
 
-  gap: 20px;
+  row-gap: 40px;
 }
 .servicesChild{
   width: 33%;
@@ -458,10 +464,63 @@ small{
 }
 .servicesCard{  
   padding: 30px;
-  width: 80%;
+  width: calc(100% - 100px);
 
-  background-color: var(--primary-contrast-color);
+  background-color: var(--secondary-contrast-color);
+
+  box-shadow: 0 0 20px var(--secondary-contrast-color);
+
+  clip-path: polygon(0% 0%, 95% 0%, 100% 4%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 0% 0%);
+
+  transition: transform 0.2s;
 }
+
+.servicesCard:hover{
+  transform: scale(101%);
+  cursor: pointer;
+}
+
 .servicesCard img{
   width: 100%;
+  aspect-ratio: 1/0.7;
+  object-fit: cover;
+  object-position: center;
+}
+
+.servicesCard h4{
+  color: var(--primary-color);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.servicesCard hr{
+  margin-top: 30px;
+  border-top: 2px solid var(--primary-color);
+}
+.servicesButton{
+
+  text-decoration: none;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+
+  background-color: var(--primary-color);
+  color: var(--quantertary-contrast-color);
+
+  padding: 10px 30px;
+  border-radius: 5px;
+
+  box-shadow: 4px 4px 0 var(--tertiary-color);
+
+  margin-top: 40px;
+
+  transition: box-shadow 0.2s;
+
+}
+.servicesButton:hover{
+  box-shadow: 6px 6px 0 var(--tertiary-color);
+}
+.servicesButton:active{
+  box-shadow: 4px 4px 0 var(--tertiary-color);
+  transition: box-shadow 0.1s;
 }
