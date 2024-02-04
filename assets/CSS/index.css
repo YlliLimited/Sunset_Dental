@@ -573,7 +573,7 @@ small{
   width: calc(100% - 1100px);
   padding:20px 0px 20px 1100px;
 
-  position: relative;
+  scroll-snap-type: x mandatory;
 }
 
 .testiParent::-webkit-scrollbar{
@@ -585,6 +585,8 @@ small{
 .testiChild{
   width: fit-content;
   height: fit-content;
+
+  scroll-snap-align: center;
 }
 .testiCard{
   width: 350px;
