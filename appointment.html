@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sunset Dental Clinic</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/CSS/appointment.css" />
+    </head>
+    <body>
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar">
+                <a href="index.html"
+                    ><img
+                        src="assets/images/logo.png"
+                        alt="Logo"
+                        class="navbarLogo"
+                        loading="lazy"
+                /></a>
+
+                <ul class="navbarLinks">
+                    <li>
+                        <a href="#">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Form -->
+        <legend>
+            <h3
+                style="
+                    margin: 0 0 60px 0;
+                    text-align: center;
+                    margin-top: 150px;
+                "
+            >
+                Book Appointment
+            </h3>
+        </legend>
+        <section id="appointment">
+            <form action="" method="">
+                <label for="name"><h6>Name:</h6></label> <br />
+                <input type="text" name="name" placeholder="Name" required />
+                <br />
+
+                <label for="lastName"><h6>Last Name:</h6></label> <br />
+                <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last Name"
+                    required
+                />
+                <br />
+
+                <label for="phone"><h6>Phone:</h6></label> <br />
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="+999 88 777 666"
+                    required
+                />
+                <br />
+
+                <label for="email"><h6>Email:</h6></label> <br />
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="johndoe@john.com"
+                    required
+                />
+                <br />
+
+                <label for="date"><h6>Appointment Date:</h6></label><br />
+                <input type="date" /><br />
+
+                <label for="gender"><h6>Gender:</h6></label> <br />
+                <input type="radio" id="radio1" name="gender" required />
+                Male
+                <label for="radio1" id="radioLabel"></label>
+                <input type="radio" id="radio2" name="gender" required />
+                Female
+                <label for="radio2" id="radioLabel"></label>
+                <br />
+
+                <label for="status"
+                    ><h6 style="margin-top: 60px">Patient Status:</h6></label
+                ><br />
+                <select name="status" required>
+                    <option value="">Oncoming Patient</option>
+                    <option value="1">New Patient</option></select
+                ><br />
+
+                <label for="message"><h6>Message:</h6></label> <br />
+                <textarea
+                    name="message"
+                    placeholder="Message"
+                    required
+                ></textarea>
+                <br />
+
+                <input type="submit" value="SUBMIT" />
+            </form>
+        </section>
+
+        <!-- Contant -->
+        <section id="contact">
+            <div class="contactParent">
+                <div class="contactChild">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46940.2115854003!2d21.117527770485836!3d42.66637271824818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee605110927%3A0x9365bfdf385eb95a!2sPristina!5e0!3m2!1sen!2s!4v1706986190936!5m2!1sen!2s"
+                        width="100%"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+
+                <div class="contactChild contactRight">
+                    <div>
+                        <h3>Contacts</h3>
+                        <ul>
+                            <li>
+                                <h6>
+                                    <span
+                                        ><img
+                                            src="assets/images/phoneIcon.svg"
+                                            alt="Contact Icon"
+                                            loading="lazy"
+                                            class="contactIcon"
+                                    /></span>
+                                    +383 99 222 777
+                                </h6>
+                            </li>
+                            <li>
+                                <h6>
+                                    <span
+                                        ><img
+                                            src="assets/images/locationIcon.svg"
+                                            alt="Contact Icon"
+                                            loading="lazy"
+                                            class="contactIcon"
+                                    /></span>
+                                    Rr. Agim Ramadani, Prishtinë
+                                </h6>
+                            </li>
+                            <li style="margin-bottom: 75px">
+                                <h6>
+                                    <span
+                                        ><img
+                                            src="assets/images/mailIcon.svg"
+                                            alt="Contact Icon"
+                                            loading="lazy"
+                                            class="contactIcon"
+                                    /></span>
+                                    filanfisteku@filani.com
+                                </h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footerIconContainer">
+                <img
+                    src="assets/images/logo.png"
+                    alt="Sunset Logo"
+                    loading="lazy"
+                    class="footerIcon"
+                />
+            </div>
+
+            <hr />
+
+            <div class="footerParent">
+                <div class="footerChild footerNavigation">
+                    <ul>
+                        <h5>Navigation</h5>
+                        <li>
+                            <a href="#" class="footerLink"
+                                ><small>SERVICES</small></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="footerLink"
+                                ><small>ABOUT</small></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="footerLink"
+                                ><small>CONTACT</small></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footerChild">
+                    <ul>
+                        <h5>Hours</h5>
+                        <li>
+                            <small>M - 6am/8pm</small>
+                        </li>
+                        <li>
+                            <small>T - 6am/8pm</small>
+                        </li>
+                        <li>
+                            <small>W - 6am/8pm</small>
+                        </li>
+                        <li>
+                            <small>T - 6am/8pm</small>
+                        </li>
+                        <li>
+                            <small>F - 6am/8pm</small>
+                        </li>
+                        <li>
+                            <small>S - 6am/8pm</small>
+                        </li>
+                        <li>
+                            <small>S - Not Opened</small>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footerChild footerSocial">
+                    <ul>
+                        <h5>Social</h5>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="assets/images/instagramIcon.svg"
+                                    alt="Social Media Icon"
+                                    loading="lazy"
+                                    class="footerSM"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="assets/images/facebookLogo.svg"
+                                    alt="Social Media Icon"
+                                    loading="lazy"
+                                    class="footerSM"
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr />
+
+            <small class="footerCopyright">&copy Yll Kelmendi 2024</small>
+        </footer>
+    </body>
+</html>

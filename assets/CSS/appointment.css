@@ -1,0 +1,480 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+.baskervville-regular {
+  font-family: "Baskervville", serif;
+  font-weight:inherit;
+  font-style: normal;
+}
+
+.baskervville-regular-italic {
+  font-family: "Baskervville", serif;
+  font-weight: inherit;
+  font-style: italic;
+}
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+::-webkit-scrollbar {
+  width:8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--quantertary-contrast-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+body{
+  scroll-behavior: smooth;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+
+  background-color:var(--quantertary-contrast-color);
+
+  border: 0;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+
+  scrollbar-width: 8px;
+}
+
+
+/* Colors */
+:root{
+  --primary-color:rgb(4, 13, 18);
+  --secondary-color:rgb(24, 61, 61);
+  --tertiary-color:rgb(92, 131, 116);
+  --quantertary-color:rgb(147, 177, 166);
+
+  --primary-contrast-color:	rgb(187, 171, 140);
+  --secondary-contrast-color:	rgb(222, 208, 182);
+  --tertiary-contrast-color:	rgb(250, 238, 209);
+  --quantertary-contrast-color:	rgb(253, 247, 228);
+}
+
+
+
+
+/* Elements */
+h1{
+  font-size: clamp(3.4rem, 10vw, 9rem);
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -2%;
+}
+h2{
+  font-size: clamp(2.9rem, 8vw, 7rem);
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1.5%;
+}
+h3{
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1%;
+}
+h4{
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -1%;
+}
+h5{
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.8%;
+}
+h6{
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.5%;
+}
+
+p{
+  font-size: clamp(0.9rem, 2.3vw, 1.3rem);
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.6px;
+  font-weight:light;
+}
+small{
+  font-size:clamp(0.8rem, 2.1vw, 1.1rem);
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.6px;
+  font-weight:light;
+}
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+.navbar{
+  width: 98vw;
+  height: 90px;
+  position: fixed;
+
+  top: 1vw;
+  left: 1vw;
+
+  background-color: var(--secondary-color);
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+
+  padding: 0px;
+
+  z-index: 5;
+}
+.navbarLogo{
+  width: 70px;
+  aspect-ratio: 1;
+
+  margin-left: 10px;
+}
+.navbarLinks{
+  list-style-type: none;
+  color: white;
+  margin-right: 10px;
+}
+.navbarLinks li{
+  display: inline;
+  margin: 0px 20px;
+}
+.navbarLinks a{
+  color: white;
+  text-decoration: none;
+
+  box-shadow: 0;
+
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+
+  transition: box-shadow 0.1s;
+}
+.navbarLinks a:hover{
+  text-shadow: 1.2px 1.2px 0px white;
+  color: transparent;
+}
+.navbarLinks li:last-child a{
+  margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Form */
+#appointment{
+  width: 100%;
+  height: fit-content;
+
+  display:flex;
+  justify-content: center;
+
+  font-size: 1.5rem;
+}
+
+#appointment form h6{
+  margin: 0px;
+  font-size: 1.5rem;
+}
+
+#appointment form input[type="text"], input[type="tel"], input[type="email"], input[type="date"], textarea{
+  width: 60vw;
+  height: 20px;
+  padding: 20px;
+
+  font-size: 1.2rem;
+
+  margin-bottom: 60px;
+
+  background-color: var(--quantertary-contrast-color);
+
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+
+  transition: background-color 0.3s;
+}
+
+
+#appointment form input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="date"]:focus, textarea:focus{
+  outline: none;
+  background-color: rgb(147, 177, 166, 0.1);
+}
+
+#appointment form input[type="radio"]{
+  display: none;
+}
+
+#appointment form textarea{
+  height: 80px;
+}
+
+
+#radioLabel:before {
+  content: '';
+  display: inline-block;
+  height: 25px;
+  width:25px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color .2s;
+
+  margin: 0px 20px -7px 0px;
+}
+
+#radioLabel:hover{
+  cursor: pointer;
+}
+
+input:checked + #radioLabel:before {
+  background-color: var(--primary-color);
+}
+
+#appointment form select{
+  width: 62.5vw;
+  height: 50px;
+  padding: 0px 20px 0px 20px;
+  margin-bottom: 60px;
+  background-color: var(--quantertary-contrast-color);
+
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  border: 1px solid var(--primary-color);
+}
+#appointment form select:hover{
+  cursor: pointer;
+}
+
+#appointment form input[type="submit"]{
+  width: 100%;
+  padding: 15px 0px;
+  font-size: 1.2rem;
+
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--quantertary-contrast-color);
+  border-radius: 5px;
+
+  box-shadow: 4px 4px 0px var(--tertiary-color);
+
+  transition: box-shadow 0.2s;
+}
+#appointment form input[type="submit"]:hover{
+  cursor: pointer;
+  box-shadow: 6px 6px 0px var(--tertiary-color);
+}
+#appointment form input[type="submit"]:active{
+  cursor: pointer;
+  box-shadow: 4px 4px 0px var(--tertiary-color);
+  transition: box-shadow 0.1s;
+}
+
+
+
+
+
+
+
+
+
+/* Contact */
+#contact{
+  width: 100%;
+  height: fit-content;
+
+  margin: 0px;
+  padding: 0px;
+
+  margin-top: 150px;
+}
+.contactParent{
+  width: 100%;
+  height: fit-content;
+
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+
+  background-image: url(/assets/images/dentalClinic.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.contactChild{
+  width: 50%;
+
+  margin: 0px;
+}
+
+.contactChild iframe{
+  aspect-ratio: 1/0.9;
+  margin: 0px;
+}
+
+.contactRight{
+  color: var(--primary-color);
+
+  padding: 0px 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactRight ul{
+  list-style-type: none;
+  margin: 0px;
+}
+.contactRight ul li{
+  margin: -30px 0px;
+  color: var(--secondary-color);
+}
+.contactRight h3{
+  margin: 0px 0px 80px 45px;
+}
+.contactRight h6{
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.3px;
+}
+.contactIcon{
+  width: 40px;
+  vertical-align: text-top;
+  margin: 0px 10px;
+}
+.contactRight>div{
+  background-color: var(--quantertary-color);
+  width: fit-content;
+  height: fit-content;
+  padding: 50px 30px 20px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer{
+  background-color: var(--primary-color);
+  color: var(--quantertary-contrast-color);
+
+  padding-bottom: 50px;
+
+  position: relative;
+}
+
+footer ul{
+  list-style-type: none;
+}
+footer ul h5{
+  margin: 20px 0px;
+}
+
+.footerParent{
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
+  align-items:baseline;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  margin: 50px 0px;
+}
+.footerChild{
+  margin: 0px 50px;
+}
+
+
+.footerNavigation ul li{
+  margin: 5px 0px;
+}
+.footerLink{
+  text-decoration: none;
+  color: var(--quantertary-contrast-color);
+
+  transform: text-shadow 0.2s;
+}
+.footerLink:hover{
+  color: transparent;
+  text-shadow: 1px 1px 0px var(--quantertary-contrast-color);
+}
+
+
+.footerSocial ul li{
+  display: inline;
+  margin-right:10px;
+}
+.footerSM{
+  width: 45px;
+}
+
+.footerIconContainer{
+  width: 100%;
+  height: 160px;
+  position: relative;
+}
+.footerIcon{
+  position: absolute;
+  width: 100px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 20px 0px;
+}
+
+footer hr{
+ width: 90%;
+}
+.footerCopyright{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
