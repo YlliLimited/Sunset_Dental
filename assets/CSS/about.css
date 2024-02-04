@@ -390,6 +390,26 @@ small{
   object-fit: cover;
   object-position: center;
 }
+.workingHours{
+  text-align: center;
+
+  margin: 0px auto 200px;
+}
+.workingHours tr th h6{
+  margin: -5px 30px;
+}
+.workingHours tr td p{
+  margin: -10px 20px;
+}
+.workingHours th{
+  border-bottom: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--quantertary-contrast-color);
+}
+.workingHours tr td{
+  border-bottom: 1px solid var(--primary-color);
+}
+
 
 
 
