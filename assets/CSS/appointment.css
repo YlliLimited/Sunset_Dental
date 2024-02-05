@@ -130,9 +130,9 @@ small{
 
 
 /* Navbar */
-.navbar{
+.navbar {
   width: 98vw;
-  height: 90px;
+  height: clamp(75px, 8vw, 90px);
   position: fixed;
 
   top: 1vw;
@@ -144,44 +144,99 @@ small{
 
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
 
   padding: 0px;
 
   z-index: 5;
 }
-.navbarLogo{
-  width: 70px;
+.navbarLogo {
+  width: clamp(55px, 5vw, 70px);
   aspect-ratio: 1;
 
   margin-left: 10px;
 }
-.navbarLinks{
+.navbarLinks {
   list-style-type: none;
   color: white;
   margin-right: 10px;
 }
-.navbarLinks li{
+.navbarLinks li {
   display: inline;
   margin: 0px 20px;
 }
-.navbarLinks a{
+.navbarLinks a {
   color: white;
   text-decoration: none;
 
   box-shadow: 0;
 
-  font-size: 1.3rem;
-  font-family: 'Roboto', sans-serif;
+  font-size: clamp(0.8rem, 1.8vw, 1.3rem);
+  font-family: "Roboto", sans-serif;
 
   transition: box-shadow 0.1s;
 }
-.navbarLinks a:hover{
+.navbarLinks a:hover {
   text-shadow: 1.2px 1.2px 0px white;
   color: transparent;
 }
-.navbarLinks li:last-child a{
-  margin-right: 40px;
+.navbarLinks li:last-child a {
+  color: var(--primary-color);
+  background-color: var(--quantertary-contrast-color);
+  text-decoration: none;
+  margin: 0px 15px;
+  padding: 12px 40px;
+  border-radius: 5px;
+
+  box-shadow: 3px 3px 0 var(--tertiary-color);
+
+  transition: box-shadow 0.2s;
+}
+.navbarLinks li:last-child a:hover {
+  box-shadow: 5px 5px 0 var(--tertiary-color);
+}
+.navbarLinks li:last-child a:active {
+  box-shadow: 3px 3px 0 var(--tertiary-color);
+  transition: box-shadow 0.05s;
+}
+@media screen and (max-width: 1023.98px) {
+  .navbarLinks li {
+      margin: 0px 15px;
+  }
+  .navbarLinks li:last-child a {
+      margin: 0px 10px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .navbarLinks li {
+      margin: 0px 10px;
+  }
+  .navbarLinks li:last-child a {
+      margin: 0px 5px;
+      padding: 10px 38px;
+  }
+  .navbar {
+      width: 100vw;
+      position: fixed;
+
+      top: 0px;
+      left: 0px;
+      border-radius: 0px;
+  }
+}
+@media screen and (max-width: 599.98px) {
+  .navbarLinks li:last-child a {
+      display: none;
+  }
+  .navbarLinks li {
+      margin: 0px 5px;
+  }
+  .navbarLogo {
+      width: 50px;
+  }
+  .navbar {
+      height: 70px;
+  }
 }
 
 
