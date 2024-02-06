@@ -124,132 +124,280 @@
                 font-weight: light;
             }
 
-            /* About us */
-            #about {
+            /* Testimonials */
+            #testimonials {
                 width: 100%;
                 height: fit-content;
+
+                margin: 160px 0px;
+            }
+            .testiParent {
+                width: 100%;
+                height: fit-content;
+
+                margin: 0px;
+                padding: 0px;
 
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: row;
+                flex-wrap: nowrap;
 
-                background-image: url(/assets/images/teamImage.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-attachment: fixed;
+                overflow-x: scroll;
 
-                margin-top: 150px;
-                padding: 80px 0px;
+                width: calc(100% - 90vw);
+                padding: 20px 0vw 20px 90vw;
+
+                scroll-snap-type: x mandatory;
             }
-            .aboutCard {
-                width: 55%;
 
-                background-color: rgb(4, 13, 18, 0.9);
+            .testiParent::-webkit-scrollbar {
+                height: 5px;
+            }
+            .testiParent::-webkit-scrollbar-thumb {
+                background-color: var(--quantertary-color);
+            }
+            .testiChild {
+                width: fit-content;
+                height: fit-content;
+            }
+            .testiCard {
+                width: 23vw;
+                aspect-ratio: 1;
+
+                background-color: var(--secondary-color);
+
+                padding: 50px 30px 30px 30px;
+
+                position: relative;
+
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
                 color: var(--quantertary-contrast-color);
 
-                padding: 100px;
+                z-index: 0;
 
-                border: var(--quantertary-contrast-color) 3px solid;
-                clip-path: polygon(
-                    5% 0%,
-                    95% 0%,
-                    100% 5%,
-                    100% 95%,
-                    95% 100%,
-                    5% 100%,
-                    0% 95%,
-                    0% 5%
-                );
-            }
-            .aboutCard h3 {
-                margin: 0px;
-            }
-            .aboutCard h5 {
-                margin: 50px 0 0 0;
-            }
-            .aboutCard ul li {
-                list-style-type: "\2713    ";
-            }
-            .aboutCard p {
-                margin-bottom: 30px;
-            }
-            .aboutButton {
-                color: var(--primary-color);
-                background-color: var(--quantertary-contrast-color);
-                box-shadow: 3px 3px 0 var(--tertiary-color);
+                margin: 0px 10px;
 
-                text-decoration: none;
+                scroll-snap-align: none start;
+                scroll-margin: 0px 20px;
 
-                padding: 10px 30px;
-
-                border-radius: 5px;
-
-                font-family: "Roboto", sans-serif;
-                font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-
-                transition: box-shadow 0.2s;
+                box-shadow: 0px 0px 20px rgb(147, 177, 166, 0.5);
             }
-            .aboutButton:hover {
-                box-shadow: 5px 5px 0 var(--tertiary-color);
+            .testiCard p {
+                font-size: clamp(1rem, 1.7vw, 1.3rem);
             }
-            .aboutButton:active {
-                box-shadow: 3px 3px 0 var(--tertiary-color);
-                transition: box-shadow 0.1s;
+            .testiCard img {
+                width: 5cqw;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+            .testiLastCard {
+                margin-right: 15vw;
             }
 
-            @media screen and (max-width: 1049.98px) {
-                .aboutCard {
-                    padding: 80px;
+            @media screen and (max-width: 1349.98px) {
+                .testiParent {
+                    width: calc(100% - 100vw);
+                    padding: 20px 0vw 20px 100vw;
+                }
+            }
+            @media screen and (max-width: 1199.98px) {
+                .testiLastCard {
+                    margin-right: 11vw;
+                }
+            }
+            @media screen and (max-width: 999.98px) {
+                .testiLastCard {
+                    margin-right: 9vw;
+                }
+            }
+            @media screen and (max-width: 879.98px) {
+                .testiCard {
+                    padding: 48px 25px 25px 25px;
+                    width: 200px;
+                }
+                .testiCard img {
+                    width: 40px;
+                }
+                .testiLastCard {
+                    margin-right: 80px;
                 }
             }
             @media screen and (max-width: 849.98px) {
-                .aboutCard {
-                    padding: 60px;
-                }
-                .aboutCard ul li p {
-                    margin: 10px;
+                .testiLastCard {
+                    margin-right: 35px;
                 }
             }
-            @media screen and (max-width: 499.98px) {
-                .aboutCard {
-                    padding: 40px 50px;
-                    width: 65%;
+            @media screen and (max-width: 828.98px) {
+                .testiParent {
+                    width: calc(100% - 200vw);
+                }
+                .testiLastCard {
+                    margin-right: 20px;
+                }
+                .testiChild:first-child .testiCard {
+                    margin-left: 10vw;
                 }
             }
-            @media screen and (max-width: 399.98px) {
-                .aboutCard {
-                    padding: 40px 25px;
-                    width: 75%;
+            @media screen and (max-width: 779.98px) {
+                .testiCard {
+                    margin: 0px 8px;
+                }
+                .testiChild:first-child .testiCard {
+                    margin-left: 100px;
+                }
+            }
+            @media screen and (max-width: 754.98px) {
+                .testiChild:first-child .testiCard {
+                    margin-left: 150px;
+                }
+            }
+            @media screen and (max-width: 729.98px) {
+                .testiChild:first-child .testiCard {
+                    margin-left: 250px;
+                }
+            }
+            @media screen and (max-width: 679.98px) {
+                .testiChild:first-child .testiCard {
+                    margin-left: 350px;
+                }
+            }
+            @media screen and (max-width: 629.98px) {
+                .testiChild:first-child .testiCard {
+                    margin-left: 500px;
+                }
+            }
+            @media screen and (max-width: 549.98px) {
+                .testiChild:first-child .testiCard {
+                    margin-left: 700px;
+                }
+            }
+            @media screen and (max-width: 449.98px) {
+                .testiChild:first-child .testiCard {
+                    margin-left: 900px;
+                }
+            }
+            @media screen and (max-width: 349.98px) {
+                .testiChild:first-child .testiCard {
+                    margin-left: 1100px;
                 }
             }
         </style>
     </head>
     <body>
-        <!-- About Us -->
-        <section id="about">
-            <div class="aboutCard">
-                <h3>About us</h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Architecto, officiis. Et, quisquam iusto! Veniam unde alias
-                    reprehenderit fugiat perferendis dolor, perspiciatis
-                    eligendi consectetur incidunt nam deleniti doloribus!
-                    Nostrum ducimus, quae quibusdam et, nesciunt ullam rerum
-                    quam, laborum sint cumque quia dolore voluptates facilis
-                    maxime qui modi esse deleniti velit molestias?
-                </p>
-                <a href="about.html" class="aboutButton">MORE</a>
-
-                <h5>Our values</h5>
-                <ul>
-                    <li><p>Lorem ipsum dolor</p></li>
-                    <li><p>Lorem ipsum dolor</p></li>
-                    <li><p>Lorem ipsum dolor</p></li>
-                    <li><p>Lorem ipsum dolor</p></li>
-                    <li><p>Lorem ipsum dolor</p></li>
-                </ul>
+        <!-- Testimonials -->
+        <section id="testimonials">
+            <h3
+                style="
+                    color: var(--primary-color);
+                    text-align: center;
+                    margin: 0px 0px 30px 0px;
+                "
+            >
+                Testimonials
+            </h3>
+            <div class="testiParent">
+                <div class="testiChild">
+                    <div class="testiCard">
+                        <img
+                            src="assets/images/quotationMark.svg"
+                            alt="Quotation Mard"
+                            loading="lazy"
+                        />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Suscipit, ipsam! Dolores rem praesentium ipsum
+                            architecto libero sint fugit velit sequi?
+                        </p>
+                        <br />
+                        <i>- Filan Fisteku</i>
+                    </div>
+                </div>
+                <div class="testiChild">
+                    <div class="testiCard">
+                        <img
+                            src="assets/images/quotationMark.svg"
+                            alt="Quotation Mard"
+                            loading="lazy"
+                        />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Suscipit, ipsam! Dolores rem praesentium ipsum
+                            architecto libero sint fugit velit sequi?
+                        </p>
+                        <br />
+                        <i>- Filan Fisteku</i>
+                    </div>
+                </div>
+                <div class="testiChild">
+                    <div class="testiCard">
+                        <img
+                            src="assets/images/quotationMark.svg"
+                            alt="Quotation Mard"
+                            loading="lazy"
+                        />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Suscipit, ipsam! Dolores rem praesentium ipsum
+                            architecto libero sint fugit velit sequi?
+                        </p>
+                        <br />
+                        <i>- Filan Fisteku</i>
+                    </div>
+                </div>
+                <div class="testiChild">
+                    <div class="testiCard">
+                        <img
+                            src="assets/images/quotationMark.svg"
+                            alt="Quotation Mard"
+                            loading="lazy"
+                        />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Suscipit, ipsam! Dolores rem praesentium ipsum
+                            architecto libero sint fugit velit sequi?
+                        </p>
+                        <br />
+                        <i>- Filan Fisteku</i>
+                    </div>
+                </div>
+                <div class="testiChild">
+                    <div class="testiCard">
+                        <img
+                            src="assets/images/quotationMark.svg"
+                            alt="Quotation Mard"
+                            loading="lazy"
+                        />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Suscipit, ipsam! Dolores rem praesentium ipsum
+                            architecto libero sint fugit velit sequi?
+                        </p>
+                        <br />
+                        <i>- Filan Fisteku</i>
+                    </div>
+                </div>
+                <div class="testiChild">
+                    <div class="testiCard testiLastCard">
+                        <img
+                            src="assets/images/quotationMark.svg"
+                            alt="Quotation Mard"
+                            loading="lazy"
+                        />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Suscipit, ipsam! Dolores rem praesentium ipsum
+                            architecto libero sint fugit velit sequi?
+                        </p>
+                        <br />
+                        <i>- Filan Fisteku</i>
+                    </div>
+                </div>
             </div>
         </section>
     </body>

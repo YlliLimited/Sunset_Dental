@@ -652,7 +652,7 @@ p {
 
 
 /* Services */
-#services{
+#services {
   width: 100%;
   height: fit-content;
 
@@ -662,7 +662,7 @@ p {
 
   margin-top: 150px;
 }
-.servicesParent{
+.servicesParent {
   width: 92%;
   height: fit-content;
 
@@ -674,14 +674,14 @@ p {
 
   row-gap: 40px;
 }
-.servicesChild{
+.servicesChild {
   width: 33%;
   height: fit-content;
 
   display: flex;
   justify-content: center;
 }
-.servicesCard{  
+.servicesCard {
   padding: 30px;
   width: calc(100% - 100px);
 
@@ -689,39 +689,47 @@ p {
 
   box-shadow: 0 0 20px var(--secondary-contrast-color);
 
-  clip-path: polygon(0% 0%, 95% 0%, 100% 4%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 0% 0%);
+  clip-path: polygon(
+      0% 0%,
+      95% 0%,
+      100% 4%,
+      100% 100%,
+      100% 100%,
+      0% 100%,
+      0% 100%,
+      0% 0%
+  );
 
   transition: transform 0.2s;
 }
 
-.servicesCard:hover{
+.servicesCard:hover {
   transform: scale(101%);
   cursor: pointer;
 }
 
-.servicesCard img{
+.servicesCard img {
   width: 100%;
   aspect-ratio: 1/0.7;
   object-fit: cover;
   object-position: center;
 }
 
-.servicesCard h4{
+.servicesCard h4 {
   color: var(--primary-color);
   margin-top: 20px;
   margin-bottom: 0;
 }
 
-.servicesCard hr{
+.servicesCard hr {
   margin-top: 30px;
   border-top: 2px solid var(--primary-color);
 }
-.servicesButton{
-
+.servicesButton {
   text-decoration: none;
 
   font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
 
   background-color: var(--primary-color);
   color: var(--quantertary-contrast-color);
@@ -734,14 +742,32 @@ p {
   margin-top: 40px;
 
   transition: box-shadow 0.2s;
-
 }
-.servicesButton:hover{
+.servicesButton:hover {
   box-shadow: 6px 6px 0 var(--tertiary-color);
 }
-.servicesButton:active{
+.servicesButton:active {
   box-shadow: 4px 4px 0 var(--tertiary-color);
   transition: box-shadow 0.1s;
+}
+@media screen and (max-width: 1199.98px) {
+  .servicesChild {
+      width: 50%;
+  }
+}
+@media screen and (max-width: 749.98px) {
+  .servicesChild {
+      width: 100%;
+  }
+  .servicesCard {
+      width: 350px;
+  }
+}
+@media screen and (max-width: 459.98px) {
+  .servicesCard {
+      width: 82%;
+      padding: 25px;
+  }
 }
 
 
@@ -755,13 +781,13 @@ p {
 
 
 /* Testimonials */
-#testimonials{
+#testimonials {
   width: 100%;
   height: fit-content;
 
-  margin-top: 160px;
+  margin: 160px 0px;
 }
-.testiParent{
+.testiParent {
   width: 100%;
   height: fit-content;
 
@@ -776,24 +802,24 @@ p {
 
   overflow-x: scroll;
 
-  width: calc(100% - 1330px);
-  padding:20px 0px 20px 1330px;
+  width: calc(100% - 90vw);
+  padding: 20px 0vw 20px 90vw;
 
   scroll-snap-type: x mandatory;
 }
 
-.testiParent::-webkit-scrollbar{
+.testiParent::-webkit-scrollbar {
   height: 5px;
 }
-.testiParent::-webkit-scrollbar-thumb{
+.testiParent::-webkit-scrollbar-thumb {
   background-color: var(--quantertary-color);
 }
-.testiChild{
+.testiChild {
   width: fit-content;
   height: fit-content;
 }
-.testiCard{
-  width: 350px;
+.testiCard {
+  width: 23vw;
   aspect-ratio: 1;
 
   background-color: var(--secondary-color);
@@ -817,11 +843,105 @@ p {
 
   box-shadow: 0px 0px 20px rgb(147, 177, 166, 0.5);
 }
-.testiCard img{
-  width: 80px;
+.testiCard p {
+  font-size: clamp(1rem, 1.7vw, 1.3rem);
+}
+.testiCard img {
+  width: 5cqw;
   position: absolute;
   top: 10px;
   left: 10px;
+}
+.testiLastCard {
+  margin-right: 15vw;
+}
+
+@media screen and (max-width: 1349.98px) {
+  .testiParent {
+      width: calc(100% - 100vw);
+      padding: 20px 0vw 20px 100vw;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .testiLastCard {
+      margin-right: 11vw;
+  }
+}
+@media screen and (max-width: 999.98px) {
+  .testiLastCard {
+      margin-right: 9vw;
+  }
+}
+@media screen and (max-width: 879.98px) {
+  .testiCard {
+      padding: 48px 25px 25px 25px;
+      width: 200px;
+  }
+  .testiCard img {
+      width: 40px;
+  }
+  .testiLastCard {
+      margin-right: 80px;
+  }
+}
+@media screen and (max-width: 849.98px) {
+  .testiLastCard {
+      margin-right: 35px;
+  }
+}
+@media screen and (max-width: 828.98px) {
+  .testiParent {
+      width: calc(100% - 200vw);
+  }
+  .testiLastCard {
+      margin-right: 20px;
+  }
+  .testiChild:first-child .testiCard {
+      margin-left: 10vw;
+  }
+}
+@media screen and (max-width: 779.98px) {
+  .testiCard {
+      margin: 0px 8px;
+  }
+  .testiChild:first-child .testiCard {
+      margin-left: 100px;
+  }
+}
+@media screen and (max-width: 754.98px) {
+  .testiChild:first-child .testiCard {
+      margin-left: 150px;
+  }
+}
+@media screen and (max-width: 729.98px) {
+  .testiChild:first-child .testiCard {
+      margin-left: 250px;
+  }
+}
+@media screen and (max-width: 679.98px) {
+  .testiChild:first-child .testiCard {
+      margin-left: 350px;
+  }
+}
+@media screen and (max-width: 629.98px) {
+  .testiChild:first-child .testiCard {
+      margin-left: 500px;
+  }
+}
+@media screen and (max-width: 549.98px) {
+  .testiChild:first-child .testiCard {
+      margin-left: 700px;
+  }
+}
+@media screen and (max-width: 449.98px) {
+  .testiChild:first-child .testiCard {
+      margin-left: 900px;
+  }
+}
+@media screen and (max-width: 349.98px) {
+  .testiChild:first-child .testiCard {
+      margin-left: 1100px;
+  }
 }
 
 
