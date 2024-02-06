@@ -124,232 +124,242 @@
                 font-weight: light;
             }
 
-            /* Contact */
-            #contact {
-                width: 100%;
-                height: fit-content;
+            /* Footer */
+            footer {
+                background-color: var(--primary-color);
+                color: var(--quantertary-contrast-color);
 
-                margin: 300px 0px;
-                padding: 0px;
+                padding-bottom: 50px;
+
+                position: relative;
             }
-            .contactParent {
+
+            footer ul {
+                list-style-type: none;
+            }
+            footer ul h5 {
+                margin: 20px 0px;
+            }
+
+            .footerParent {
                 width: 100%;
                 height: fit-content;
-
-                margin: 0px;
-                padding: 0px;
 
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: baseline;
                 flex-direction: row;
                 flex-wrap: nowrap;
 
-                background-image: url(/assets/images/dentalClinic.jpg);
-                background-position: right;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
+                margin: 50px 0px;
+            }
+            .footerChild {
+                margin: 0px 50px;
             }
 
-            .contactChild {
-                width: 50%;
+            .footerNavigation ul li {
+                margin: 5px 0px;
+            }
+            .footerLink {
+                text-decoration: none;
+                color: var(--quantertary-contrast-color);
 
-                margin: 0px;
+                transform: text-shadow 0.2s;
+            }
+            .footerLink:hover {
+                color: transparent;
+                text-shadow: 1px 1px 0px var(--quantertary-contrast-color);
             }
 
-            .contactChild iframe {
-                aspect-ratio: 1/0.9;
-                margin: 0px;
-            }
-
-            .contactRight {
-                color: var(--primary-color);
-
-                padding: 0px 50px;
-
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .contactRight ul {
-                list-style-type: none;
-                margin: 0px;
-            }
-            .contactRight ul li {
-                margin: -30px 0px;
-                color: var(--secondary-color);
-            }
-            .contactRight h3 {
-                margin: 0px 0px 80px 45px;
-            }
-            .contactRight h6 {
-                font-family: "Roboto", sans-serif;
-                letter-spacing: 1.3px;
-            }
-            .contactIcon {
-                width: 40px;
-                vertical-align: text-top;
-                margin: 0px 10px;
-            }
-            .contactButton {
+            .footerButton {
                 text-decoration: none;
 
-                color: var(--quantertary-contrast-color);
-                background-color: var(--primary-color);
+                color: var(--primary-color);
+                background-color: var(--quantertary-contrast-color);
 
                 font-family: "Roboto", sans-serif;
-                font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+                font-size: clamp(0.8rem, 1.5vw, 1rem);
 
-                padding: 15px 40px;
+                padding: 10px 30px;
                 border-radius: 5px;
 
                 box-shadow: 4px 4px 0 var(--tertiary-color);
 
-                margin-left: 15px;
-
                 transition: box-shadow 0.2s;
             }
-            .contactButton:hover {
-                box-shadow: 6px 6px 0 var(--tertiary-color);
+            .footerButton:hover {
+                box-shadow: 5px 5px 0px var(--tertiary-color);
             }
-            .contactButton:active {
-                box-shadow: 4px 4px 0 var(--tertiary-color);
+            .footerButton:active {
+                box-shadow: 4px 4px 0px var(--tertiary-color);
                 transition: box-shadow 0.1s;
             }
-            .contactRight > div {
-                background-color: var(--quantertary-color);
-                width: fit-content;
-                height: fit-content;
-                padding: 30px 30px 100px 30px;
+
+            .footerSocial ul li {
+                display: inline;
+                margin-right: 10px;
             }
-            @media screen and (max-width: 1149.98px) {
-                .contactParent {
-                    flex-direction: column-reverse;
+            .footerSM {
+                width: 45px;
+            }
+
+            .footerIconContainer {
+                width: 100%;
+                height: 160px;
+                position: relative;
+            }
+            .footerIcon {
+                position: absolute;
+                width: 100px;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                margin: 20px 0px;
+            }
+
+            footer hr {
+                width: 90%;
+            }
+            .footerCopyright {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            @media screen and (max-width: 854.98px) {
+                .footerChild {
+                    margin: 0px 10px;
                 }
-                .contactChild {
-                    width: 100%;
+                .footerSM {
+                    width: 40px;
                 }
-                .contactChild iframe {
-                    height: 500px;
-                }
-                .contactRight {
-                    padding: 50px 0px;
-                }
-                .contactRight > div {
-                    padding: 30px 0px 100px 0px;
-                    width: 70vw;
-                    display: flex;
+            }
+            @media screen and (max-width: 589.98px) {
+                .footerParent {
                     flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    flex-wrap: nowrap;
-                }
-                .contactRight h3 {
-                    margin: 5px 0px 10px 0px;
-                }
-                .contactRight ul {
-                    list-style-type: none;
                     margin: 0px;
-                    margin-left: -35px;
+                    padding: 0px;
                 }
-            }
-            @media screen and (max-width: 629.98px) {
-                .contactRight div {
-                    width: 80vw;
-                }
-            }
-            @media screen and (max-width: 514.98px) {
-                .contactRight div {
+                .footerChild {
                     width: 100%;
-                    padding: 15px 0px 75px 0px;
+                    /* display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-items: center; */
+
+                    padding: 0px;
+                    margin: 0px;
                 }
-                .contactButton {
-                    padding: 12px 30px;
+                .footerButton {
+                    display: none;
                 }
-                .contactRight div ul {
-                    margin-left: -40px;
+                .footerIcon {
+                    width: 80px;
+                    margin: 0px;
                 }
-            }
-            @media screen and (max-width: 399.98px) {
-                .contactIcon {
-                    width: 30px;
-                }
-            }
-            @media screen and (max-width: 359.98px) {
-                .contactIcon {
-                    width: 25px;
-                }
-                .contactRight h6 {
-                    letter-spacing: 0.5px;
+                .footerIconContainer {
+                    height: 95px;
                 }
             }
         </style>
     </head>
     <body>
-        <!-- Contant -->
-        <section id="contact">
-            <div class="contactParent">
-                <div class="contactChild">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46940.2115854003!2d21.117527770485836!3d42.66637271824818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee605110927%3A0x9365bfdf385eb95a!2sPristina!5e0!3m2!1sen!2s!4v1706986190936!5m2!1sen!2s"
-                        width="100%"
-                        style="border: 0"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
+        <!-- Footer -->
+        <footer>
+            <div class="footerIconContainer">
+                <img
+                    src="assets/images/logo.png"
+                    alt="Sunset Logo"
+                    loading="lazy"
+                    class="footerIcon"
+                />
+            </div>
+
+            <hr />
+
+            <div class="footerParent">
+                <div class="footerChild footerNavigation">
+                    <ul>
+                        <h5>Navigation</h5>
+                        <li>
+                            <a href="services.html" class="footerLink"
+                                ><small>SERVICES</small></a
+                            >
+                        </li>
+                        <li>
+                            <a href="about.html" class="footerLink"
+                                ><small>ABOUT</small></a
+                            >
+                        </li>
+                        <li>
+                            <a href="#contact" class="footerLink"
+                                ><small>CONTACT</small></a
+                            >
+                        </li>
+                        <li style="margin-top: 20px">
+                            <a href="appointment.html" class="footerButton"
+                                >BOOK APPOINTMENT</a
+                            >
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="contactChild contactRight">
-                    <div>
-                        <h3>Contacts</h3>
-                        <ul>
-                            <li>
-                                <h6>
-                                    <span
-                                        ><img
-                                            src="assets/images/phoneIcon.svg"
-                                            alt="Contact Icon"
-                                            loading="lazy"
-                                            class="contactIcon"
-                                    /></span>
-                                    +383 99 222 777
-                                </h6>
-                            </li>
-                            <li>
-                                <h6>
-                                    <span
-                                        ><img
-                                            src="assets/images/locationIcon.svg"
-                                            alt="Contact Icon"
-                                            loading="lazy"
-                                            class="contactIcon"
-                                    /></span>
-                                    Rr. Agim Ramadani, Prishtinë
-                                </h6>
-                            </li>
-                            <li style="margin-bottom: 75px">
-                                <h6>
-                                    <span
-                                        ><img
-                                            src="assets/images/mailIcon.svg"
-                                            alt="Contact Icon"
-                                            loading="lazy"
-                                            class="contactIcon"
-                                    /></span>
-                                    filanfisteku@filani.com
-                                </h6>
-                            </li>
-                            <li>
-                                <a href="appointment.html" class="contactButton"
-                                    >BOOK APPOINTMENT</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
+                <div class="footerChild">
+                    <ul>
+                        <h5>Hours</h5>
+                        <li>
+                            <small>M - 6am/8pm</small>
+                        </li>
+                        <li>
+                            <small>T - 6am/8pm</small>
+                        </li>
+                        <li>
+                            <small>W - 6am/8pm</small>
+                        </li>
+                        <li>
+                            <small>T - 6am/8pm</small>
+                        </li>
+                        <li>
+                            <small>F - 6am/8pm</small>
+                        </li>
+                        <li>
+                            <small>S - 6am/8pm</small>
+                        </li>
+                        <li>
+                            <small>S - Not Opened</small>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footerChild footerSocial">
+                    <ul>
+                        <h5>Social</h5>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="assets/images/instagramIcon.svg"
+                                    alt="Social Media Icon"
+                                    loading="lazy"
+                                    class="footerSM"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="assets/images/facebookLogo.svg"
+                                    alt="Social Media Icon"
+                                    loading="lazy"
+                                    class="footerSM"
+                            /></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+
+            <hr />
+
+            <small class="footerCopyright">&copy Yll Kelmendi 2024</small>
+        </footer>
     </body>
 </html>
