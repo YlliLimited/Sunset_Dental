@@ -534,16 +534,14 @@ h4 {
 
 
 /* Contact */
-#contact{
+#contact {
   width: 100%;
   height: fit-content;
 
-  margin: 0px;
+  margin: 300px 0px;
   padding: 0px;
-
-  margin-top: 150px;
 }
-.contactParent{
+.contactParent {
   width: 100%;
   height: fit-content;
 
@@ -556,7 +554,6 @@ h4 {
   flex-direction: row;
   flex-wrap: nowrap;
 
-  
   background-image: url(/assets/images/dentalClinic.jpg);
   background-position: right;
   background-size: cover;
@@ -564,18 +561,18 @@ h4 {
   background-attachment: fixed;
 }
 
-.contactChild{
+.contactChild {
   width: 50%;
 
   margin: 0px;
 }
 
-.contactChild iframe{
+.contactChild iframe {
   aspect-ratio: 1/0.9;
   margin: 0px;
 }
 
-.contactRight{
+.contactRight {
   color: var(--primary-color);
 
   padding: 0px 50px;
@@ -584,34 +581,34 @@ h4 {
   flex-direction: column;
   align-items: center;
 }
-.contactRight ul{
+.contactRight ul {
   list-style-type: none;
   margin: 0px;
 }
-.contactRight ul li{
+.contactRight ul li {
   margin: -30px 0px;
   color: var(--secondary-color);
 }
-.contactRight h3{
+.contactRight h3 {
   margin: 0px 0px 80px 45px;
 }
-.contactRight h6{
+.contactRight h6 {
   font-family: "Roboto", sans-serif;
   letter-spacing: 1.3px;
 }
-.contactIcon{
+.contactIcon {
   width: 40px;
   vertical-align: text-top;
   margin: 0px 10px;
 }
-.contactButton{
+.contactButton {
   text-decoration: none;
 
   color: var(--quantertary-contrast-color);
   background-color: var(--primary-color);
 
   font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
 
   padding: 15px 40px;
   border-radius: 5px;
@@ -622,18 +619,79 @@ h4 {
 
   transition: box-shadow 0.2s;
 }
-.contactButton:hover{
+.contactButton:hover {
   box-shadow: 6px 6px 0 var(--tertiary-color);
 }
-.contactButton:active{
+.contactButton:active {
   box-shadow: 4px 4px 0 var(--tertiary-color);
   transition: box-shadow 0.1s;
 }
-.contactRight>div{
+.contactRight > div {
   background-color: var(--quantertary-color);
   width: fit-content;
   height: fit-content;
   padding: 30px 30px 100px 30px;
+}
+@media screen and (max-width: 1149.98px) {
+  .contactParent {
+      flex-direction: column-reverse;
+  }
+  .contactChild {
+      width: 100%;
+  }
+  .contactChild iframe {
+      height: 500px;
+  }
+  .contactRight {
+      padding: 50px 0px;
+  }
+  .contactRight > div {
+      padding: 30px 0px 100px 0px;
+      width: 70vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+  }
+  .contactRight h3 {
+      margin: 5px 0px 10px 0px;
+  }
+  .contactRight ul {
+      list-style-type: none;
+      margin: 0px;
+      margin-left: -35px;
+  }
+}
+@media screen and (max-width: 629.98px) {
+  .contactRight div {
+      width: 80vw;
+  }
+}
+@media screen and (max-width: 514.98px) {
+  .contactRight div {
+      width: 100%;
+      padding: 15px 0px 75px 0px;
+  }
+  .contactButton {
+      padding: 12px 30px;
+  }
+  .contactRight div ul {
+      margin-left: -40px;
+  }
+}
+@media screen and (max-width: 399.98px) {
+  .contactIcon {
+      width: 30px;
+  }
+}
+@media screen and (max-width: 359.98px) {
+  .contactIcon {
+      width: 25px;
+  }
+  .contactRight h6 {
+      letter-spacing: 0.5px;
+  }
 }
 
 

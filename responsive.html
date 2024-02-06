@@ -124,14 +124,15 @@
                 font-weight: light;
             }
 
-            /* Testimonials */
-            #testimonials {
+            /* Contact */
+            #contact {
                 width: 100%;
                 height: fit-content;
 
-                margin: 160px 0px;
+                margin: 300px 0px;
+                padding: 0px;
             }
-            .testiParent {
+            .contactParent {
                 width: 100%;
                 height: fit-content;
 
@@ -144,258 +145,208 @@
                 flex-direction: row;
                 flex-wrap: nowrap;
 
-                overflow-x: scroll;
-
-                width: calc(100% - 90vw);
-                padding: 20px 0vw 20px 90vw;
-
-                scroll-snap-type: x mandatory;
+                background-image: url(/assets/images/dentalClinic.jpg);
+                background-position: right;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
             }
 
-            .testiParent::-webkit-scrollbar {
-                height: 5px;
-            }
-            .testiParent::-webkit-scrollbar-thumb {
-                background-color: var(--quantertary-color);
-            }
-            .testiChild {
-                width: fit-content;
-                height: fit-content;
-            }
-            .testiCard {
-                width: 23vw;
-                aspect-ratio: 1;
+            .contactChild {
+                width: 50%;
 
-                background-color: var(--secondary-color);
+                margin: 0px;
+            }
 
-                padding: 50px 30px 30px 30px;
+            .contactChild iframe {
+                aspect-ratio: 1/0.9;
+                margin: 0px;
+            }
 
-                position: relative;
+            .contactRight {
+                color: var(--primary-color);
+
+                padding: 0px 50px;
 
                 display: flex;
-                justify-content: center;
                 flex-direction: column;
+                align-items: center;
+            }
+            .contactRight ul {
+                list-style-type: none;
+                margin: 0px;
+            }
+            .contactRight ul li {
+                margin: -30px 0px;
+                color: var(--secondary-color);
+            }
+            .contactRight h3 {
+                margin: 0px 0px 80px 45px;
+            }
+            .contactRight h6 {
+                font-family: "Roboto", sans-serif;
+                letter-spacing: 1.3px;
+            }
+            .contactIcon {
+                width: 40px;
+                vertical-align: text-top;
+                margin: 0px 10px;
+            }
+            .contactButton {
+                text-decoration: none;
 
                 color: var(--quantertary-contrast-color);
+                background-color: var(--primary-color);
 
-                z-index: 0;
+                font-family: "Roboto", sans-serif;
+                font-size: clamp(1.1rem, 2.5vw, 1.5rem);
 
-                margin: 0px 10px;
+                padding: 15px 40px;
+                border-radius: 5px;
 
-                scroll-snap-align: none start;
-                scroll-margin: 0px 20px;
+                box-shadow: 4px 4px 0 var(--tertiary-color);
 
-                box-shadow: 0px 0px 20px rgb(147, 177, 166, 0.5);
-            }
-            .testiCard p {
-                font-size: clamp(1rem, 1.7vw, 1.3rem);
-            }
-            .testiCard img {
-                width: 5cqw;
-                position: absolute;
-                top: 10px;
-                left: 10px;
-            }
-            .testiLastCard {
-                margin-right: 15vw;
-            }
+                margin-left: 15px;
 
-            @media screen and (max-width: 1349.98px) {
-                .testiParent {
-                    width: calc(100% - 100vw);
-                    padding: 20px 0vw 20px 100vw;
-                }
+                transition: box-shadow 0.2s;
             }
-            @media screen and (max-width: 1199.98px) {
-                .testiLastCard {
-                    margin-right: 11vw;
-                }
+            .contactButton:hover {
+                box-shadow: 6px 6px 0 var(--tertiary-color);
             }
-            @media screen and (max-width: 999.98px) {
-                .testiLastCard {
-                    margin-right: 9vw;
-                }
+            .contactButton:active {
+                box-shadow: 4px 4px 0 var(--tertiary-color);
+                transition: box-shadow 0.1s;
             }
-            @media screen and (max-width: 879.98px) {
-                .testiCard {
-                    padding: 48px 25px 25px 25px;
-                    width: 200px;
-                }
-                .testiCard img {
-                    width: 40px;
-                }
-                .testiLastCard {
-                    margin-right: 80px;
-                }
+            .contactRight > div {
+                background-color: var(--quantertary-color);
+                width: fit-content;
+                height: fit-content;
+                padding: 30px 30px 100px 30px;
             }
-            @media screen and (max-width: 849.98px) {
-                .testiLastCard {
-                    margin-right: 35px;
+            @media screen and (max-width: 1149.98px) {
+                .contactParent {
+                    flex-direction: column-reverse;
                 }
-            }
-            @media screen and (max-width: 828.98px) {
-                .testiParent {
-                    width: calc(100% - 200vw);
+                .contactChild {
+                    width: 100%;
                 }
-                .testiLastCard {
-                    margin-right: 20px;
+                .contactChild iframe {
+                    height: 500px;
                 }
-                .testiChild:first-child .testiCard {
-                    margin-left: 10vw;
+                .contactRight {
+                    padding: 50px 0px;
                 }
-            }
-            @media screen and (max-width: 779.98px) {
-                .testiCard {
-                    margin: 0px 8px;
+                .contactRight > div {
+                    padding: 30px 0px 100px 0px;
+                    width: 70vw;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: nowrap;
                 }
-                .testiChild:first-child .testiCard {
-                    margin-left: 100px;
+                .contactRight h3 {
+                    margin: 5px 0px 10px 0px;
                 }
-            }
-            @media screen and (max-width: 754.98px) {
-                .testiChild:first-child .testiCard {
-                    margin-left: 150px;
-                }
-            }
-            @media screen and (max-width: 729.98px) {
-                .testiChild:first-child .testiCard {
-                    margin-left: 250px;
-                }
-            }
-            @media screen and (max-width: 679.98px) {
-                .testiChild:first-child .testiCard {
-                    margin-left: 350px;
+                .contactRight ul {
+                    list-style-type: none;
+                    margin: 0px;
+                    margin-left: -35px;
                 }
             }
             @media screen and (max-width: 629.98px) {
-                .testiChild:first-child .testiCard {
-                    margin-left: 500px;
+                .contactRight div {
+                    width: 80vw;
                 }
             }
-            @media screen and (max-width: 549.98px) {
-                .testiChild:first-child .testiCard {
-                    margin-left: 700px;
+            @media screen and (max-width: 514.98px) {
+                .contactRight div {
+                    width: 100%;
+                    padding: 15px 0px 75px 0px;
+                }
+                .contactButton {
+                    padding: 12px 30px;
+                }
+                .contactRight div ul {
+                    margin-left: -40px;
                 }
             }
-            @media screen and (max-width: 449.98px) {
-                .testiChild:first-child .testiCard {
-                    margin-left: 900px;
+            @media screen and (max-width: 399.98px) {
+                .contactIcon {
+                    width: 30px;
                 }
             }
-            @media screen and (max-width: 349.98px) {
-                .testiChild:first-child .testiCard {
-                    margin-left: 1100px;
+            @media screen and (max-width: 359.98px) {
+                .contactIcon {
+                    width: 25px;
+                }
+                .contactRight h6 {
+                    letter-spacing: 0.5px;
                 }
             }
         </style>
     </head>
     <body>
-        <!-- Testimonials -->
-        <section id="testimonials">
-            <h3
-                style="
-                    color: var(--primary-color);
-                    text-align: center;
-                    margin: 0px 0px 30px 0px;
-                "
-            >
-                Testimonials
-            </h3>
-            <div class="testiParent">
-                <div class="testiChild">
-                    <div class="testiCard">
-                        <img
-                            src="assets/images/quotationMark.svg"
-                            alt="Quotation Mard"
-                            loading="lazy"
-                        />
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Suscipit, ipsam! Dolores rem praesentium ipsum
-                            architecto libero sint fugit velit sequi?
-                        </p>
-                        <br />
-                        <i>- Filan Fisteku</i>
-                    </div>
+        <!-- Contant -->
+        <section id="contact">
+            <div class="contactParent">
+                <div class="contactChild">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46940.2115854003!2d21.117527770485836!3d42.66637271824818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee605110927%3A0x9365bfdf385eb95a!2sPristina!5e0!3m2!1sen!2s!4v1706986190936!5m2!1sen!2s"
+                        width="100%"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
                 </div>
-                <div class="testiChild">
-                    <div class="testiCard">
-                        <img
-                            src="assets/images/quotationMark.svg"
-                            alt="Quotation Mard"
-                            loading="lazy"
-                        />
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Suscipit, ipsam! Dolores rem praesentium ipsum
-                            architecto libero sint fugit velit sequi?
-                        </p>
-                        <br />
-                        <i>- Filan Fisteku</i>
-                    </div>
-                </div>
-                <div class="testiChild">
-                    <div class="testiCard">
-                        <img
-                            src="assets/images/quotationMark.svg"
-                            alt="Quotation Mard"
-                            loading="lazy"
-                        />
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Suscipit, ipsam! Dolores rem praesentium ipsum
-                            architecto libero sint fugit velit sequi?
-                        </p>
-                        <br />
-                        <i>- Filan Fisteku</i>
-                    </div>
-                </div>
-                <div class="testiChild">
-                    <div class="testiCard">
-                        <img
-                            src="assets/images/quotationMark.svg"
-                            alt="Quotation Mard"
-                            loading="lazy"
-                        />
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Suscipit, ipsam! Dolores rem praesentium ipsum
-                            architecto libero sint fugit velit sequi?
-                        </p>
-                        <br />
-                        <i>- Filan Fisteku</i>
-                    </div>
-                </div>
-                <div class="testiChild">
-                    <div class="testiCard">
-                        <img
-                            src="assets/images/quotationMark.svg"
-                            alt="Quotation Mard"
-                            loading="lazy"
-                        />
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Suscipit, ipsam! Dolores rem praesentium ipsum
-                            architecto libero sint fugit velit sequi?
-                        </p>
-                        <br />
-                        <i>- Filan Fisteku</i>
-                    </div>
-                </div>
-                <div class="testiChild">
-                    <div class="testiCard testiLastCard">
-                        <img
-                            src="assets/images/quotationMark.svg"
-                            alt="Quotation Mard"
-                            loading="lazy"
-                        />
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Suscipit, ipsam! Dolores rem praesentium ipsum
-                            architecto libero sint fugit velit sequi?
-                        </p>
-                        <br />
-                        <i>- Filan Fisteku</i>
+
+                <div class="contactChild contactRight">
+                    <div>
+                        <h3>Contacts</h3>
+                        <ul>
+                            <li>
+                                <h6>
+                                    <span
+                                        ><img
+                                            src="assets/images/phoneIcon.svg"
+                                            alt="Contact Icon"
+                                            loading="lazy"
+                                            class="contactIcon"
+                                    /></span>
+                                    +383 99 222 777
+                                </h6>
+                            </li>
+                            <li>
+                                <h6>
+                                    <span
+                                        ><img
+                                            src="assets/images/locationIcon.svg"
+                                            alt="Contact Icon"
+                                            loading="lazy"
+                                            class="contactIcon"
+                                    /></span>
+                                    Rr. Agim Ramadani, Prishtinë
+                                </h6>
+                            </li>
+                            <li style="margin-bottom: 75px">
+                                <h6>
+                                    <span
+                                        ><img
+                                            src="assets/images/mailIcon.svg"
+                                            alt="Contact Icon"
+                                            loading="lazy"
+                                            class="contactIcon"
+                                    /></span>
+                                    filanfisteku@filani.com
+                                </h6>
+                            </li>
+                            <li>
+                                <a href="appointment.html" class="contactButton"
+                                    >BOOK APPOINTMENT</a
+                                >
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
