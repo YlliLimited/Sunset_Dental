@@ -124,242 +124,1263 @@
                 font-weight: light;
             }
 
-            /* Footer */
-            footer {
-                background-color: var(--primary-color);
-                color: var(--quantertary-contrast-color);
-
-                padding-bottom: 50px;
-
-                position: relative;
-            }
-
-            footer ul {
-                list-style-type: none;
-            }
-            footer ul h5 {
-                margin: 20px 0px;
-            }
-
-            .footerParent {
+            /* Services */
+            #services {
                 width: 100%;
                 height: fit-content;
 
-                display: flex;
-                justify-content: center;
-                align-items: baseline;
-                flex-direction: row;
-                flex-wrap: nowrap;
+                margin: 0px;
+                padding: 0px;
 
-                margin: 50px 0px;
-            }
-            .footerChild {
-                margin: 0px 50px;
+                margin-top: 150px;
             }
 
-            .footerNavigation ul li {
-                margin: 5px 0px;
-            }
-            .footerLink {
-                text-decoration: none;
+            #services h3 {
+                text-align: center;
+
+                background-color: var(--secondary-color);
                 color: var(--quantertary-contrast-color);
 
-                transform: text-shadow 0.2s;
-            }
-            .footerLink:hover {
-                color: transparent;
-                text-shadow: 1px 1px 0px var(--quantertary-contrast-color);
+                padding: 10px 0px;
             }
 
-            .footerButton {
-                text-decoration: none;
+            .servicesParent {
+                width: calc(100% - 100px);
+                height: fit-content;
 
-                color: var(--primary-color);
-                background-color: var(--quantertary-contrast-color);
+                padding: 0px 50px;
 
-                font-family: "Roboto", sans-serif;
-                font-size: clamp(0.8rem, 1.5vw, 1rem);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                flex-direction: row;
 
-                padding: 10px 30px;
-                border-radius: 5px;
+                row-gap: 20px;
 
-                box-shadow: 4px 4px 0 var(--tertiary-color);
-
-                transition: box-shadow 0.2s;
+                margin-bottom: 300px;
             }
-            .footerButton:hover {
-                box-shadow: 5px 5px 0px var(--tertiary-color);
+            .servicesChild {
+                width: 25%;
+                height: fit-content;
             }
-            .footerButton:active {
-                box-shadow: 4px 4px 0px var(--tertiary-color);
-                transition: box-shadow 0.1s;
-            }
+            .servicesCard {
+                width: 92%;
+                height: 95%;
+                margin: auto;
 
-            .footerSocial ul li {
-                display: inline;
-                margin-right: 10px;
-            }
-            .footerSM {
-                width: 45px;
-            }
+                background-color: var(--primary-color);
+                color: var(--quantertary-contrast-color);
 
-            .footerIconContainer {
+                clip-path: polygon(
+                    0% 0%,
+                    90% 0%,
+                    100% 10%,
+                    100% 100%,
+                    100% 100%,
+                    0% 100%,
+                    0% 100%,
+                    0% 0%
+                );
+            }
+            .cardTop {
                 width: 100%;
-                height: 160px;
-                position: relative;
-            }
-            .footerIcon {
-                position: absolute;
-                width: 100px;
-                top: 10px;
-                left: 50%;
-                transform: translateX(-50%);
+                height: 100px;
 
+                color: var(--quantertary-contrast-color);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                position: relative;
+
+                padding: 10px 0px;
+            }
+            .cardTop img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+
+                object-fit: cover;
+                object-position: center;
+
+                filter: brightness(0.2);
+
+                z-index: -5;
+            }
+
+            .cardBody {
+                padding: 20px 25px;
+                text-align: center;
+            }
+            .cardBody hr {
+                border: none;
+                border-top: 1px solid var(--quantertary-contrast-color);
                 margin: 20px 0px;
             }
+            .cardInfo ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
 
-            footer hr {
-                width: 90%;
+                text-align: left;
             }
-            .footerCopyright {
-                position: absolute;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
+            .cardInfo ul p {
+                display: inline;
+                vertical-align: super;
             }
-            @media screen and (max-width: 854.98px) {
-                .footerChild {
-                    margin: 0px 10px;
-                }
-                .footerSM {
-                    width: 40px;
+
+            @media screen and (max-width: 1299.98px) {
+                .servicesChild {
+                    width: 33.33%;
                 }
             }
-            @media screen and (max-width: 589.98px) {
-                .footerParent {
-                    flex-direction: column;
-                    margin: 0px;
-                    padding: 0px;
+            @media screen and (max-width: 999.98px) {
+                .servicesChild {
+                    width: 50%;
                 }
-                .footerChild {
+                .cardTop {
+                    height: 80px;
+                }
+                .servicesParent {
+                    width: calc(100% - 60px);
+                    padding: 0px 30px;
+                }
+            }
+            @media screen and (max-width: 599.98px) {
+                .servicesChild {
                     width: 100%;
-                    /* display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    align-items: center; */
-
-                    padding: 0px;
-                    margin: 0px;
                 }
-                .footerButton {
-                    display: none;
+                .cardTop {
+                    height: 60px;
                 }
-                .footerIcon {
-                    width: 80px;
-                    margin: 0px;
+                .servicesCard {
+                    width: 300px;
                 }
-                .footerIconContainer {
-                    height: 95px;
+            }
+            @media screen and (max-width: 389.98px) {
+                .servicesCard {
+                    width: 100%;
                 }
             }
         </style>
     </head>
     <body>
-        <!-- Footer -->
-        <footer>
-            <div class="footerIconContainer">
-                <img
-                    src="assets/images/logo.png"
-                    alt="Sunset Logo"
-                    loading="lazy"
-                    class="footerIcon"
-                />
+        <!-- Services -->
+        <section id="services">
+            <h3>General</h3>
+            <div class="servicesParent">
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/dentalClinic.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_1.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_2.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_3.png"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_4.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_5.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_6.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/teamImage.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <hr />
+            <h3>Cosmetic</h3>
+            <div class="servicesParent">
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/dentalClinic.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
 
-            <div class="footerParent">
-                <div class="footerChild footerNavigation">
-                    <ul>
-                        <h5>Navigation</h5>
-                        <li>
-                            <a href="services.html" class="footerLink"
-                                ><small>SERVICES</small></a
-                            >
-                        </li>
-                        <li>
-                            <a href="about.html" class="footerLink"
-                                ><small>ABOUT</small></a
-                            >
-                        </li>
-                        <li>
-                            <a href="#contact" class="footerLink"
-                                ><small>CONTACT</small></a
-                            >
-                        </li>
-                        <li style="margin-top: 20px">
-                            <a href="appointment.html" class="footerButton"
-                                >BOOK APPOINTMENT</a
-                            >
-                        </li>
-                    </ul>
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="footerChild">
-                    <ul>
-                        <h5>Hours</h5>
-                        <li>
-                            <small>M - 6am/8pm</small>
-                        </li>
-                        <li>
-                            <small>T - 6am/8pm</small>
-                        </li>
-                        <li>
-                            <small>W - 6am/8pm</small>
-                        </li>
-                        <li>
-                            <small>T - 6am/8pm</small>
-                        </li>
-                        <li>
-                            <small>F - 6am/8pm</small>
-                        </li>
-                        <li>
-                            <small>S - 6am/8pm</small>
-                        </li>
-                        <li>
-                            <small>S - Not Opened</small>
-                        </li>
-                    </ul>
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_1.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="footerChild footerSocial">
-                    <ul>
-                        <h5>Social</h5>
-                        <li>
-                            <a href="#"
-                                ><img
-                                    src="assets/images/instagramIcon.svg"
-                                    alt="Social Media Icon"
-                                    loading="lazy"
-                                    class="footerSM"
-                            /></a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                ><img
-                                    src="assets/images/facebookLogo.svg"
-                                    alt="Social Media Icon"
-                                    loading="lazy"
-                                    class="footerSM"
-                            /></a>
-                        </li>
-                    </ul>
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_2.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_3.png"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_4.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_5.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_6.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/teamImage.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <hr />
+            <h3>Surgical</h3>
+            <div class="servicesParent">
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/dentalClinic.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
 
-            <small class="footerCopyright">&copy Yll Kelmendi 2024</small>
-        </footer>
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_1.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_2.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_3.png"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_4.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_5.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/patient_6.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicesChild">
+                    <div class="servicesCard">
+                        <div class="cardTop">
+                            <img
+                                src="/assets/images/teamImage.jpg"
+                                alt="Card Image"
+                                loading="lazy"
+                            />
+                            <h4>Service</h4>
+                        </div>
+
+                        <div class="cardBody">
+                            <small>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Deleniti soluta minima esse
+                                consequatur maxime eos.
+                            </small>
+
+                            <hr />
+
+                            <div class="cardInfo">
+                                <ul>
+                                    <li>
+                                        <img
+                                            src="assets/images/durationIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>1h 45min</p>
+                                    </li>
+                                    <li>
+                                        <img
+                                            src="assets/images/euroIcon.svg"
+                                            alt="Duration Icon"
+                                            loading="lazy"
+                                            width="30"
+                                        />
+                                        <p>50</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

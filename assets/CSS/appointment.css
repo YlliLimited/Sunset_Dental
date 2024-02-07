@@ -180,40 +180,14 @@ small{
   text-shadow: 1.2px 1.2px 0px white;
   color: transparent;
 }
-.navbarLinks li:last-child a {
-  color: var(--primary-color);
-  background-color: var(--quantertary-contrast-color);
-  text-decoration: none;
-  margin: 0px 15px;
-  padding: 12px 40px;
-  border-radius: 5px;
-
-  box-shadow: 3px 3px 0 var(--tertiary-color);
-
-  transition: box-shadow 0.2s;
-}
-.navbarLinks li:last-child a:hover {
-  box-shadow: 5px 5px 0 var(--tertiary-color);
-}
-.navbarLinks li:last-child a:active {
-  box-shadow: 3px 3px 0 var(--tertiary-color);
-  transition: box-shadow 0.05s;
-}
 @media screen and (max-width: 1023.98px) {
   .navbarLinks li {
       margin: 0px 15px;
-  }
-  .navbarLinks li:last-child a {
-      margin: 0px 10px;
   }
 }
 @media screen and (max-width: 767.98px) {
   .navbarLinks li {
       margin: 0px 10px;
-  }
-  .navbarLinks li:last-child a {
-      margin: 0px 5px;
-      padding: 10px 38px;
   }
   .navbar {
       width: 100vw;
@@ -225,9 +199,6 @@ small{
   }
 }
 @media screen and (max-width: 599.98px) {
-  .navbarLinks li:last-child a {
-      display: none;
-  }
   .navbarLinks li {
       margin: 0px 5px;
   }
@@ -369,7 +340,7 @@ input:checked + #radioLabel:before {
   width: 100%;
   height: fit-content;
 
-  margin: 300px 0px;
+  margin-top: 150px;
   padding: 0px;
 }
 .contactParent {
@@ -432,36 +403,11 @@ input:checked + #radioLabel:before {
   vertical-align: text-top;
   margin: 0px 10px;
 }
-.contactButton {
-  text-decoration: none;
-
-  color: var(--quantertary-contrast-color);
-  background-color: var(--primary-color);
-
-  font-family: "Roboto", sans-serif;
-  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-
-  padding: 15px 40px;
-  border-radius: 5px;
-
-  box-shadow: 4px 4px 0 var(--tertiary-color);
-
-  margin-left: 15px;
-
-  transition: box-shadow 0.2s;
-}
-.contactButton:hover {
-  box-shadow: 6px 6px 0 var(--tertiary-color);
-}
-.contactButton:active {
-  box-shadow: 4px 4px 0 var(--tertiary-color);
-  transition: box-shadow 0.1s;
-}
 .contactRight > div {
   background-color: var(--quantertary-color);
   width: fit-content;
   height: fit-content;
-  padding: 30px 30px 100px 30px;
+  padding: 50px 40px 0px 40px;
 }
 @media screen and (max-width: 1149.98px) {
   .contactParent {
@@ -477,13 +423,13 @@ input:checked + #radioLabel:before {
       padding: 50px 0px;
   }
   .contactRight > div {
-      padding: 30px 0px 100px 0px;
       width: 70vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       flex-wrap: nowrap;
+      padding: 50px 10px 0px 10px;
   }
   .contactRight h3 {
       margin: 5px 0px 10px 0px;
@@ -502,7 +448,7 @@ input:checked + #radioLabel:before {
 @media screen and (max-width: 514.98px) {
   .contactRight div {
       width: 100%;
-      padding: 15px 0px 75px 0px;
+      padding: 50px 0px px 0px;
   }
   .contactButton {
       padding: 12px 30px;

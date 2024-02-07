@@ -422,7 +422,7 @@ h4 {
 
 
 /* Services */
-#services{
+#services {
   width: 100%;
   height: fit-content;
 
@@ -432,7 +432,7 @@ h4 {
   margin-top: 150px;
 }
 
-#services h3{
+#services h3 {
   text-align: center;
 
   background-color: var(--secondary-color);
@@ -441,7 +441,7 @@ h4 {
   padding: 10px 0px;
 }
 
-.servicesParent{
+.servicesParent {
   width: calc(100% - 100px);
   height: fit-content;
 
@@ -457,11 +457,11 @@ h4 {
 
   margin-bottom: 300px;
 }
-.servicesChild{
+.servicesChild {
   width: 25%;
   height: fit-content;
 }
-.servicesCard{
+.servicesCard {
   width: 92%;
   height: 95%;
   margin: auto;
@@ -469,12 +469,20 @@ h4 {
   background-color: var(--primary-color);
   color: var(--quantertary-contrast-color);
 
-  clip-path: polygon(0% 0%, 90% 0%, 100% 10%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 0% 0%);
+  clip-path: polygon(
+      0% 0%,
+      90% 0%,
+      100% 10%,
+      100% 100%,
+      100% 100%,
+      0% 100%,
+      0% 100%,
+      0% 0%
+  );
 }
-.cardTop{
+.cardTop {
   width: 100%;
   height: 100px;
-
 
   color: var(--quantertary-contrast-color);
 
@@ -484,9 +492,9 @@ h4 {
 
   position: relative;
 
-  padding: 10px 20px;
+  padding: 10px 0px;
 }
-.cardTop img{
+.cardTop img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -499,25 +507,59 @@ h4 {
   z-index: -5;
 }
 
-.cardBody{
+.cardBody {
   padding: 20px 25px;
   text-align: center;
 }
-.cardBody hr{
+.cardBody hr {
   border: none;
   border-top: 1px solid var(--quantertary-contrast-color);
   margin: 20px 0px;
 }
-.cardInfo ul{
+.cardInfo ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 
   text-align: left;
 }
-.cardInfo ul p{
+.cardInfo ul p {
   display: inline;
-  vertical-align:super;
+  vertical-align: super;
+}
+
+@media screen and (max-width: 1299.98px) {
+  .servicesChild {
+      width: 33.33%;
+  }
+}
+@media screen and (max-width: 999.98px) {
+  .servicesChild {
+      width: 50%;
+  }
+  .cardTop {
+      height: 80px;
+  }
+  .servicesParent {
+      width: calc(100% - 60px);
+      padding: 0px 30px;
+  }
+}
+@media screen and (max-width: 599.98px) {
+  .servicesChild {
+      width: 100%;
+  }
+  .cardTop {
+      height: 60px;
+  }
+  .servicesCard {
+      width: 300px;
+  }
+}
+@media screen and (max-width: 389.98px) {
+  .servicesCard {
+      width: 100%;
+  }
 }
 
 
@@ -538,7 +580,7 @@ h4 {
   width: 100%;
   height: fit-content;
 
-  margin: 300px 0px;
+  margin-top: 150px;
   padding: 0px;
 }
 .contactParent {
