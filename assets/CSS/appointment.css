@@ -375,7 +375,7 @@ input:checked + #radioLabel:before {
   flex-direction: row;
   flex-wrap: nowrap;
 
-  background-image: url(../images/dentalClinic.jpg);
+  background-image: url(assets/images/dentalClinic.jpg);
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
