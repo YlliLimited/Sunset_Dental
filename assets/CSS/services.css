@@ -176,6 +176,9 @@ small{
   font-family: "Roboto", sans-serif;
 
   transition: box-shadow 0.1s;
+  -o-transition: box-shadow 0.1s;
+  -moz-transition: box-shadow 0.1s;
+  -webkit-transition: box-shadow 0.1s;
 }
 .navbarLinks a:hover {
   text-shadow: 1.2px 1.2px 0px white;
@@ -192,6 +195,9 @@ small{
   box-shadow: 3px 3px 0 var(--tertiary-color);
 
   transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
 }
 .navbarLinks li:last-child a:hover {
   box-shadow: 5px 5px 0 var(--tertiary-color);
@@ -199,6 +205,9 @@ small{
 .navbarLinks li:last-child a:active {
   box-shadow: 3px 3px 0 var(--tertiary-color);
   transition: box-shadow 0.05s;
+  -o-transition: box-shadow 0.05s;
+  -moz-transition: box-shadow 0.05s;
+  -webkit-transition: box-shadow 0.05s;
 }
 @media screen and (max-width: 1023.98px) {
   .navbarLinks li {
@@ -317,6 +326,9 @@ h4 {
   box-shadow: 5px 5px 0 var(--tertiary-color);
 
   transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
 }
 .heroRight a:hover {
   box-shadow: 8px 8px 0 var(--tertiary-color);
@@ -324,6 +336,9 @@ h4 {
 .heroRight a:active {
   box-shadow: 5px 5px 0 var(--tertiary-color);
   transition: background-color 0.1s;
+  -o-transition: box-shadow 0.1s;
+  -moz-transition: box-shadow 0.1s;
+  -webkit-transition: box-shadow 0.1s;
 }
 .leftRectangle {
   width: 25%;
@@ -503,6 +518,8 @@ h4 {
   object-position: center;
 
   filter: brightness(0.2);
+  -webkit-filter: brightness(0.2);
+  -ms-filter: brightness(0.2);
 
   z-index: -5;
 }
@@ -660,6 +677,9 @@ h4 {
   margin-left: 15px;
 
   transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
 }
 .contactButton:hover {
   box-shadow: 6px 6px 0 var(--tertiary-color);
@@ -667,6 +687,9 @@ h4 {
 .contactButton:active {
   box-shadow: 4px 4px 0 var(--tertiary-color);
   transition: box-shadow 0.1s;
+  -o-transition: box-shadow 0.1s;
+  -moz-transition: box-shadow 0.1s;
+  -webkit-transition: box-shadow 0.1s;
 }
 .contactRight > div {
   background-color: var(--quantertary-color);
@@ -787,7 +810,10 @@ footer ul h5 {
   text-decoration: none;
   color: var(--quantertary-contrast-color);
 
-  transform: text-shadow 0.2s;
+  transition: text-shadow 0.2s;
+  -o-transition: text-shadow 0.2s;
+  -moz-transition: text-shadow 0.2s;
+  -webkit-transition: text-shadow 0.2s;
 }
 .footerLink:hover {
   color: transparent;
@@ -809,6 +835,9 @@ footer ul h5 {
   box-shadow: 4px 4px 0 var(--tertiary-color);
 
   transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
 }
 .footerButton:hover {
   box-shadow: 5px 5px 0px var(--tertiary-color);
@@ -816,6 +845,9 @@ footer ul h5 {
 .footerButton:active {
   box-shadow: 4px 4px 0px var(--tertiary-color);
   transition: box-shadow 0.1s;
+  -o-transition: box-shadow 0.1s;
+  -moz-transition: box-shadow 0.1s;
+  -webkit-transition: box-shadow 0.1s;
 }
 
 .footerSocial ul li {
@@ -837,6 +869,10 @@ footer ul h5 {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 
   margin: 20px 0px;
 }
@@ -849,6 +885,10 @@ footer hr {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 @media screen and (max-width: 854.98px) {
   .footerChild {
@@ -866,10 +906,6 @@ footer hr {
   }
   .footerChild {
       width: 100%;
-      /* display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: center; */
 
       padding: 0px;
       margin: 0px;
