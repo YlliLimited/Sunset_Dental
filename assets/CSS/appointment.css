@@ -175,6 +175,9 @@ small{
   font-family: "Roboto", sans-serif;
 
   transition: box-shadow 0.1s;
+  -o-transition: box-shadow 0.1s;
+  -moz-transition: box-shadow 0.1s;
+  -webkit-transition: box-shadow 0.1s;
 }
 .navbarLinks a:hover {
   text-shadow: 1.2px 1.2px 0px white;
@@ -249,6 +252,9 @@ small{
   border-bottom: 2px solid var(--primary-color);
 
   transition: background-color 0.3s;
+  -o-transition: box-shadow 0.3s;
+  -moz-transition: box-shadow 0.3s;
+  -webkit-transition: box-shadow 0.3s;
 }
 
 
@@ -275,6 +281,9 @@ small{
   border-radius: 50%;
   z-index: 2;
   transition: background-color .2s;
+  -o-transition: background-color .2s;
+  -moz-transition: background-color .2s;
+  -webkit-transition: background-color .2s;
 
   margin: 0px 20px -7px 0px;
 }
@@ -315,6 +324,9 @@ input:checked + #radioLabel:before {
   box-shadow: 4px 4px 0px var(--tertiary-color);
 
   transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
 }
 #appointment form input[type="submit"]:hover{
   cursor: pointer;
@@ -324,6 +336,9 @@ input:checked + #radioLabel:before {
   cursor: pointer;
   box-shadow: 4px 4px 0px var(--tertiary-color);
   transition: box-shadow 0.1s;
+  -o-transition: box-shadow 0.1s;
+  -moz-transition: box-shadow 0.1s;
+  -webkit-transition: box-shadow 0.1s;
 }
 
 
@@ -541,7 +556,10 @@ footer ul h5 {
   text-decoration: none;
   color: var(--quantertary-contrast-color);
 
-  transform: text-shadow 0.2s;
+  transition: text-shadow 0.2s;
+  -o-transition: text-shadow 0.2s;
+  -moz-transition: text-shadow 0.2s;
+  -webkit-transition: text-shadow 0.2s;
 }
 .footerLink:hover {
   color: transparent;
@@ -563,6 +581,9 @@ footer ul h5 {
   box-shadow: 4px 4px 0 var(--tertiary-color);
 
   transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
 }
 .footerButton:hover {
   box-shadow: 5px 5px 0px var(--tertiary-color);
@@ -570,6 +591,9 @@ footer ul h5 {
 .footerButton:active {
   box-shadow: 4px 4px 0px var(--tertiary-color);
   transition: box-shadow 0.1s;
+  -o-transition: box-shadow 0.1s;
+  -moz-transition: box-shadow 0.1s;
+  -webkit-transition: box-shadow 0.1s;
 }
 
 .footerSocial ul li {
@@ -591,6 +615,10 @@ footer ul h5 {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 
   margin: 20px 0px;
 }
@@ -603,6 +631,10 @@ footer hr {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 @media screen and (max-width: 854.98px) {
   .footerChild {
@@ -620,10 +652,6 @@ footer hr {
   }
   .footerChild {
       width: 100%;
-      /* display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: center; */
 
       padding: 0px;
       margin: 0px;
