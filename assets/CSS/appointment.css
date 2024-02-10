@@ -328,6 +328,26 @@ input:checked + #radioLabel:before {
 }
 
 
+@media screen and (max-width: 474.98px) {
+  #appointment form input[type="text"], input[type="tel"], input[type="email"], input[type="date"], textarea{
+    width: 70vw;
+  }
+  #appointment form select{
+    width: 78vw;
+    height: 50px;
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 60px;
+    background-color: var(--quantertary-contrast-color);
+  
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    border: 1px solid var(--primary-color);
+  }
+}
+
+
+
+
 
 
 
