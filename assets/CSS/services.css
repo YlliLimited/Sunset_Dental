@@ -613,7 +613,7 @@ h4 {
   flex-direction: row;
   flex-wrap: nowrap;
 
-  background-image: url(assets/images/dentalClinic.jpg);
+  background-image: url(/assets/images/dentalClinic.jpg);
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
