@@ -232,7 +232,6 @@ small{
 
 #appointment form h6{
   margin: 0px;
-  font-size: 1.5rem;
 }
 
 #appointment form input[type="text"], input[type="tel"], input[type="email"], input[type="date"], textarea{
@@ -240,7 +239,7 @@ small{
   height: 20px;
   padding: 20px;
 
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 2.1vw, 1.1rem);
 
   margin-bottom: 60px;
 
@@ -296,7 +295,7 @@ input:checked + #radioLabel:before {
   background-color: var(--quantertary-contrast-color);
 
   color: var(--primary-color);
-  font-size: 1.1rem;
+  font-size: clamp(0.8rem, 2.1vw, 1.1rem);
   border: 1px solid var(--primary-color);
 }
 #appointment form select:hover{
@@ -306,7 +305,7 @@ input:checked + #radioLabel:before {
 #appointment form input[type="submit"]{
   width: 100%;
   padding: 15px 0px;
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 2.1vw, 1.1rem);
 
   border: none;
   background-color: var(--primary-color);
