@@ -549,7 +549,7 @@ p {
   justify-content: center;
   align-items: center;
 
-  background-image: url(/assets/images/teamImage.jpg);
+  background-image: url(../images/teamImage.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -988,7 +988,7 @@ p {
   flex-direction: row;
   flex-wrap: nowrap;
 
-  background-image: url(/assets/images/dentalClinic.jpg);
+  background-image: url(../images/dentalClinic.jpg);
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
